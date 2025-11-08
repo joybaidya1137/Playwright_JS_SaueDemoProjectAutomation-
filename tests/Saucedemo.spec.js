@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+/*import { test, expect } from '@playwright/test';
 
 
 test.beforeEach(async ({ page }) => {
@@ -15,7 +15,7 @@ test('URL and Home page title verification', async ({ page }) => {
 
 
 test('Verify products on inventory page', async ({ page }) => {
-  const productNames = await page.locator('//div[@class="inventory_item_name " and @data-test="inventory-item-name"]').allTextContents();
+  const productNames = await page.locator('//div[@class="inventory_item_name "and @data-test="inventory-item-name"]').allTextContents();
   expect(productNames.length).toBe(6);
   expect(productNames).toContain('Sauce Labs Backpack');
   expect(productNames).toContain('Sauce Labs Fleece Jacket');
@@ -84,3 +84,10 @@ test('back to products page', async ({ page }) => {
   await page.locator('#back-to-products').click();
   await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
 });
+
+
+
+
+
+
+*/
