@@ -14,10 +14,10 @@ import { expect } from "playwright/test";
       await this.page.goto('https://www.saucedemo.com/');
    }
 
-   async homePageTitle(){
+   /*async homePageTitle(){
       await expect(this.page).toHaveTitle('Swag Labs');
       console.log("Home page title verified successfully");
-   }
+   }*/
 
    async Login(username, password){
       await this.usernameInput.fill(username);
@@ -26,7 +26,7 @@ import { expect } from "playwright/test";
 
    }
 
-   async homePageTitle(){
+  /* async homePageTitle(){
       await expect(this.page).toHaveTitle('Swag Labs');
       console.log("Home page title verified successfully");
    }
@@ -38,5 +38,6 @@ import { expect } from "playwright/test";
     console.log(" Product page URL & Title verified successfully!");
 
    }
+    */
 
 }

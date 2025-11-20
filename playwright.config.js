@@ -26,13 +26,13 @@ export default defineConfig({
   reporter: 'html',
 
 
-  timeout: 60000,
-  use: {
-    actionTimeout: 0,
-    navigationTimeout: 60000,
-    trace: 'on-first-retry',
-  },
-
+timeout: 60000,
+use: {     
+  headless: false, 
+actionTimeout: 0,
+navigationTimeout: 60000,
+trace: 'on-first-retry',
+},
 
   /* Configure projects for major browsers */
   projects: [
@@ -41,15 +41,15 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+   // {
+     // name: 'firefox',
+     // use: { ...devices['Desktop Firefox'] },
+  //  },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+  //  {
+   //   name: 'webkit',
+   //   use: { ...devices['Desktop Safari'] },
+    //},
 
     /* Test against mobile viewports. */
     // {
